@@ -1,0 +1,33 @@
+# action.yml
+
+name: "Github S3 Action"
+description: "github actions s3 upload"
+author: "svon.me@gmail.com"
+
+inputs:
+  region:
+    description: "Bucket location"
+    required: false
+  bucket:
+    description: "Bucket name"
+    required: false
+    default: "22"
+  host:
+    description: "Bucket host"
+    required: true
+  access:
+    description: "Access key"
+    required: true
+  secret:
+    description: "Secret key"
+    required: true
+  local:
+    description: "Localhost file address"
+    required: true
+  remote:
+    description: "Upload file address"
+    required: true
+
+runs:
+  using: "node20"
+  main: "src/index.js"

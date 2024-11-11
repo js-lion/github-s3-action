@@ -1,0 +1,28 @@
+{
+  "name": "@js-lion/github-s3-action",
+  "description": "github actions s3 upload",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "bin": {
+    "github-s3-action": "src/index.js"
+  },
+  "preferGlobal": false,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svonme/github-s3-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svonme/github-s3-action/issues"
+  },
+  "homepage": "https://github.com/svonme/github-s3-action#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@aws-sdk/client-s3": "^3.614.0",
+    "mime-types": "^2.1.35"
+  }
+}
