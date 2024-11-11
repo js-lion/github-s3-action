@@ -1127,6 +1127,11 @@
     "@smithy/types" "^3.6.0"
     tslib "^2.6.2"
 
+"@vercel/ncc@^0.38.2":
+  version "0.38.2"
+  resolved "https://r.cnpmjs.org/@vercel/ncc/-/ncc-0.38.2.tgz#d35c3a74c671699ccf316f74bf0ecab6b60e312b"
+  integrity sha512-3yel3jaxUg9pHBv4+KeC9qlbdZPug+UMtUOlhvpDYCMSgcNSrS2Hv1LoqMsOV7hf2lYscx+BESfJOIla1WsmMQ==
+
 bowser@^2.11.0:
   version "2.11.0"
   resolved "https://r2.cnpmjs.org/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"

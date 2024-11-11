@@ -1,13 +1,17 @@
 {
   "name": "@js-lion/github-s3-action",
   "description": "github actions s3 upload",
-  "version": "1.0.0",
-  "main": "src/index.js",
+  "version": "1.1.0",
+  "type": "commonjs",
+  "main": "dist/index.js",
   "bin": {
-    "github-s3-action": "src/index.js"
+    "github-s3-action": "dist/index.js"
   },
   "preferGlobal": false,
-  "scripts": {},
+  "scripts": {
+    "test": "ncc run src/index.js",
+    "build": "ncc build src/index.js -o ./dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/svonme/github-s3-action.git"
@@ -19,7 +23,9 @@
     "url": "https://github.com/svonme/github-s3-action/issues"
   },
   "homepage": "https://github.com/svonme/github-s3-action#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.2"
+  },
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@aws-sdk/client-s3": "^3.614.0",

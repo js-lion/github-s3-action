@@ -9,8 +9,7 @@ const {config} = require("./config");
 const core = require('@actions/core');
 
 const main = async function () {
-  const env = config()
-
+  const env = config();
   let src;
   if (env.local && path.isAbsolute(env.local)) {
     src = path.normalize(env.local);
