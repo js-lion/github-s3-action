@@ -4,7 +4,7 @@ github actions s3 upload
 
 
 ```yaml
-uses: js-lion/github-s3-action@v1.0.0
+uses: js-lion/github-s3-action@v1.1.0
 with:
   region: ${{ secrets.REGION }}
   bucket: ${{ secrets.BUCKET }}
